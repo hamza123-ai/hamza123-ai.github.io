@@ -26,7 +26,16 @@
             <img src="profile.jpeg" alt="Hamza" class="profile-img" />
             <h2>MALIK HAMZA</h2>
             <p> Java Developer | API Integration | Spring Boot </p>
+            <button onclick="downloadCV()">Download CV</button>
         </div>
+        <script>
+            function downloadCV() {
+                const link = document.createElement('a');
+                link.href = 'hamza-CV.pdf';
+                link.download = 'hamza-CV.pdf';
+                link.click();
+            }
+        </script>
     </section>
 
     <!-- Skills Section -->
